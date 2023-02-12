@@ -22,7 +22,15 @@
   "ignorePatterns": ["vite.config.ts"],
   "rules": {
     "react/react-in-jsx-scope": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
-    "import/extensions": 0
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx", ".ts"] }],
+    "import/extensions": 0,
+    "import/no-unresolved": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
